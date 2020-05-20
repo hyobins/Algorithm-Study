@@ -18,5 +18,5 @@ git push: 마지막으로 푸시해주기
 <pre><code> git push -u origin master</code></pre>
 
 
-[Markdown 기본문법 참고] (https://gist.github.com/ihoneymon/652be052a0727ad59601
+[Markdown 기본문법 참고] (https://gist.github.com/ihoneymon/652be052a0727ad59601, "Markdown link"
 )
