@@ -64,7 +64,7 @@ class test{
 		distVision(x,vdist);
 
 		System.out.println("시력분포");
-		for(int i=0;i<x.length;i++) {
+		for(int i=0;i<VMAX;i++) {
 			System.out.printf("%3.1f~:%2d\n", i/10.0, vdist[i]);
 		}
 	}
