@@ -27,14 +27,32 @@ class test{
 		YMD after(int n) {
 			YMD temp = new YMD(this.y, this.m, this.d);
 			temp.d += n;
-			while(temp.d>) {
-
+			while(temp.d > months[isLeap(temp.y)][temp.m-1]) {
+				temp.m++;
+				temp.d -= months[isLeap(temp.y)][temp.m-1];
+				if(temp.m > 12) {
+					temp.y++;
+					temp.m = 1;
+				}
 			}
-
-
+			return temp;
 		}
 
+//		YMD after(int n) {
+//			YMD temp = new YMD(this.y, this.m, this.d);
+//			temp.d += n;
+//
+//			while (temp.d > months[isLeap(temp.y)][temp.m - 1]) {
+//				temp.d -= months[isLeap(temp.y)][temp.m - 1];
+//				if (++temp.m > 12) {
+//					temp.y++;
+//					temp.m = 1;
+//				}
+//			}
+//			return temp;
+//		}
 	}
+
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("year: "); int y = sc.nextInt();
@@ -45,6 +63,8 @@ class test{
 		System.out.print("n일 뒤의 날짜를 반환합니다. n= ");
 		int n = sc.nextInt();
 		date.after(n);
-		System.out.println(m+"월 "+d+"일");
+		YMD d1 = date.after(n);
+		System.out.printf("%d일 뒤의 날짜는 %d년 %d월 %d일입니다.\n", n, d1.y, d1.m, d1.d);
+
 	}
 }
