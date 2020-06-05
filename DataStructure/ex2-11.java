@@ -26,6 +26,9 @@ class test{
 
 		YMD after(int n) {
 			YMD temp = new YMD(this.y, this.m, this.d);
+			if(n<0)
+				return before(-n);
+
 			temp.d += n;
 			while(temp.d > months[isLeap(temp.y)][temp.m-1]) {
 				temp.d -= months[isLeap(temp.y)][temp.m-1];
@@ -39,6 +42,8 @@ class test{
 
 		YMD before(int n) {
 			YMD temp = new YMD(this.y, this.m, this.d);
+			if(n<0)
+				return after(-n);
 			temp.d -= n;
 			while(temp.d<1) {
 				if(--temp.m < 1) {
