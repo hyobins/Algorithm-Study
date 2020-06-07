@@ -68,12 +68,12 @@ class test{
 		System.out.print("n일 뒤의 날짜를 반환합니다. n: ");
 		int n = sc.nextInt();
 		YMD d1 = date.after(n);
-		System.out.printf("%d일 뒤의 날짜는 %d년 %d월 %d일 입니다.\n", n, d1.y, d1.m, d1.d);
+		System.out.printf("%d일 뒤의 날짜는 %d년 %d월 %d일입니다.\n", n, d1.y, d1.m, d1.d);
 
 		System.out.print("k일 앞의 날짜를 반환합니다. k: ");
 		int k = sc.nextInt();
 		YMD d2 = date.before(k);
-		System.out.printf("%d일 앞의 날짜는 %d년 %d월 %d일 입니다.\n", k, d2.y, d2.m, d2.d);
+		System.out.printf("%d일 앞의 날짜는 %d년 %d월 %d일입니다.\n", k, d2.y, d2.m, d2.d);
 
 	}
 }
