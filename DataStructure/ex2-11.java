@@ -59,7 +59,7 @@ class test{
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("현재 날짜를 입력해주세요.");
+		System.out.println("현재 날짜를 입력해주세요: ");
 		System.out.print("year: "); int y = sc.nextInt();
 		System.out.print("month: "); int m = sc.nextInt();
 		System.out.print("day: "); int d = sc.nextInt();
