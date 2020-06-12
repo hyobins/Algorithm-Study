@@ -1,5 +1,6 @@
 package test;
 import java.util.Scanner;
+//이진검색 : 전제조건은 정렬상태!
 
 class test{
 	static int binSearch(int[] a, int n, int key) {
