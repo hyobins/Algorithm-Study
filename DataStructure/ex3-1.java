@@ -7,7 +7,7 @@ class test{
 		//practice 3-3 문제 -> for문 이용해서!
 		int i;
 		a[n] = key; //sentinel 추가
-		for(i=0;a[i]!=key;i++); //while문의 break를 그대로 구현함 !! 신기싄기
+		for(i=0;a[i]!=key;i++); //while문의 break를 그대로 구현함 !!
 		return i==n ? -1:i;
 
 	}
