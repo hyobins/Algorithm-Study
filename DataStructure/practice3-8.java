@@ -17,7 +17,7 @@ class PhysExamSearch {
 
 		//문자열을 반환하는 메소드(정보 확인용)
 		public String toString() {
-			return name + " " + height + " " + vision;
+			return name + " / " + height + " / " + vision;
 		}
 
 		//오름차순으로 정렬하기위한 comparator
