@@ -38,7 +38,7 @@ class PhysExamSearch {
 				new PhyscData("유지훈", 168, 0.4),
 				new PhyscData("김한결", 169, 0.8),
 				new PhyscData("홍준기", 171, 1.5),
-				new PhyscData("진서현", 173, 0.7),
+				new PhyscData("진서잔", 173, 0.7),
 				new PhyscData("이호연", 174, 1.2),
 				new PhyscData("이수민", 175, 2.0),
 		};
