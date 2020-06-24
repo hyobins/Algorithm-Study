@@ -3,7 +3,7 @@ package test;
 public class IntStack {
 	private int max; //스택의 용량
 	private int ptr; //스택에 쌓여있는 데이터 수
-	private int[] stk;
+	private int[] stk; //스택
 
 	//실행 시 예외: 스택이 비어있음
 	public class EmptyIntStackException extends RuntimeException{
